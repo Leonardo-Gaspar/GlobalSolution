@@ -187,3 +187,139 @@ class Sistema:
             print("Opção inválida. Escolha uma opção válida.")
 
         self.mostrar_resumo_operacao("Cliente")
+
+            def menu_empresa(self):
+        print("\n--- Empresa ---")
+        print("\n--- Menu Empresa---")
+        print("1. Sistema de Movimentação")
+        print("2. Carteira Online")
+        print("3. Autenticar Atestados")
+        print("4. Reajuste de Contratos")
+        print("5. Setor Financeiro")
+
+        print("---------------------------------------------------------------------")
+        escolha_empresa = input("Escolha a área que deseja (1-5): ")
+        print("---------------------------------------------------------------------")
+
+        if escolha_empresa == "1":
+            print("\n---Sistema de Movimentação---")
+            print("Link direcionado à página Sistema de Movimentação: https://webhap.hapvida.com.br/pls/webhap/webnewcadastrousuario.login")
+        elif escolha_empresa == "2":
+            print("\n---Carteira Online---")
+            print("Link direcionado à página Carteira Online: https://webhap.hapvida.com.br/pls/webhap/pk_carteira_provisoria.login_empresa_form")
+        elif escolha_empresa == "3":
+            print("\n---Autenticar Atestados---")
+            print("Link direcionado à página Autenticar Atestados: https://webhap.hapvida.com.br/pls/webhap/pk_autentica_atestado_internet.login")
+        elif escolha_empresa == "4":
+            print("\n---Reajuste de Contratos---")
+            print("Link direcionado à página Reajuste de Contratos: https://www.hapvida.com.br/site/noticias/reajuste-de-contratos-0")
+        elif escolha_empresa == "5":
+            print("\n---Setor Financeiro---")
+            print("\n---Menu Setor Financeiro Empresa---")
+            print("1. Boleto de Pagamento")
+            print("2. Nota Fiscal")
+            print("3. Custo Operacional")
+            print("4. Troca de Arquivos (Relatório de Faturas)")
+            print("5. Extrato de Utilização")
+            print("6. Negociação de Dívida")
+            print("7. Declaração de Quitação Anual")
+
+            print("---------------------------------------------------------------------")
+            escolha_financeiro_empresa = input("Digite a opção (1-7): ")
+            print("---------------------------------------------------------------------")
+
+            if escolha_financeiro_empresa == "1":
+                print("Link direcionado à página Boleto de Pagamento:  https://webhap.hapvida.com.br/pls/webhap/webNewBoletoEmpresa.Login")
+            elif escolha_financeiro_empresa == "2":
+                print("Link direcionado à página Nota Fiscal: https://webhap.hapvida.com.br/pls/webhap/pk_nota_fiscal.login")
+            elif escolha_financeiro_empresa == "3":
+                print("Link direcionado à página Custo Operacional:  https://webhap.hapvida.com.br/pls/webhap/WEBNEWOPERACIONALEMPRESA.login")
+            elif escolha_financeiro_empresa == "4":
+                print("Link direcionado à página Troca de Arquivos (Relatório de Faturas): https://webhap.hapvida.com.br/pls/webhap/webNewTrocaArquivo.login")
+            elif escolha_financeiro_empresa == "5":
+                print("Link direcionado à página Extrato de Utilização:  https://webhap.hapvida.com.br/pls/webhap/webnewextratoutilizacao.login")
+            elif escolha_financeiro_empresa == "6":
+                print("Link direcionado à página Negociação de Dívida:  https://www.hapvida.com.br/pls/webhap/webnewnegocie.divida")
+            elif escolha_financeiro_empresa == "7":
+                print("Link direcionado à página Declaração de Quitação Anual:  https://www.hapvida.com.br/pls/webhap/webnewquitacaoanualpj.login")
+            else:
+                print("Digite uma opção válida.")
+        else:
+            print("Opção inválida. Selecione uma opção válida")
+        self.mostrar_resumo_operacao("Empresa")
+
+    def menu_prestador(self):
+        print("\n--- Prestador ---")
+        print("\n--- Menu Prestador---")
+        print("1. Autorização de Procedimentos")
+        print("2. Demonstrativo de Pagamento")
+        print("3. Folha Médica")
+        print("4. Produção médica")
+        print("5. TISS")
+        print("6. Documentos")
+        print("7. Imposto de Renda")
+        print("8. Índices e Metas")
+        print("9. Carta Resposta de Revisão de Glosa")
+        print("10. Auditoria Odontologia")
+        print("11. Prestadores Odontologia")
+        print("12. Situação Odontológica")
+        print("13. Integração Médica")
+        print("14. Intercâmbio")
+        print("15. Folha Médica - Diagnósticos")
+        print("16. Reset de Senha AD")
+
+        print("---------------------------------------------------------------------")
+        escolha_prestador = input("Escolha o produto que deseja (1-16): ")
+        print("---------------------------------------------------------------------")
+
+        if escolha_prestador == "1":
+            print("\n---Autorização de Procedimentos---")
+            print("Link direcionado à página Autorização de Procedimentos: https://savi3.hapvida.com.br/savi3//login.faces")
+        elif escolha_prestador == "2":
+            print("\n---Demonstrativo de Pagamento---")
+            print("Link direcionado à página Demonstrativo de Pagamento: https://webhap.hapvida.com.br/pls/webhap/pk_demonstrativo_pagamento.login")
+        elif escolha_prestador == "3":
+            print("\n---Folha Médica---")
+            print("Link direcionado à página Folha Médica: https://webhap.hapvida.com.br/pls/webhap/webNewPessoal.login")
+        elif escolha_prestador == "4":
+            print("\n---Produção médica---")
+            print("Link direcionado à página Produção médica: https://portalprestador.hapvida.com.br/tiss-hapvida-web/auth")
+        elif escolha_prestador == "5":
+            print("\n---TISS---")
+            print("Link direcionado à página TISS: https://webhap.hapvida.com.br/pls/webhap/tutorialtiss.emissaoGuia")
+        elif escolha_prestador == "6":
+            print("\n---Documentos---")
+            print("Link direcionado à página Documentos: https://webhap.hapvida.com.br/pls/webhap/webdocumentos.principal")
+        elif escolha_prestador == "7":
+            print("\n---Imposto de Renda---")
+            print("Link direcionado à página Imposto de Renda: https://webhap.hapvida.com.br/pls/webhap/webnewirprestador.login")
+        elif escolha_prestador == "8":
+            print("\n---Índices e Metas---")
+            print("Link direcionado à página Índices e Metas: https://webhap.hapvida.com.br/pls/webhap/webnewindicemetascredenciado.login")
+        elif escolha_prestador == "9":
+            print("\n---Carta Resposta de Revisão de Glosa---")
+            print("Link direcionado à página Carta Resposta de Revisão de Glosa: https://webhap.hapvida.com.br/pls/webhap/webnewrevisaoglosa.Login")
+        elif escolha_prestador == "10":
+            print("\n---Auditoria Odontologia---")
+            print("Link direcionado à página Auditoria Odontologia: https://www.hapvida.com.br:7779/forms/frmservlet?form=tod04014.fmx&usesdi=YES&config=jhapvida")
+        elif escolha_prestador == "11":
+            print("\n---Prestadores Odontologia---")
+            print("Link direcionado à página Prestadores Odontologia: https://webhap.hapvida.com.br/pls/podontow/webnewdentalprestador.pr_login")
+        elif escolha_prestador == "12":
+            print("\n---Situação Odontológica---")
+            print("Link direcionado à página Situação Odontológica: https://webhap.hapvida.com.br/pls/webhap/pk_odon_beneficiario.login")
+        elif escolha_prestador == "13":
+            print("\n---Integração Médica---")
+            print("Link direcionado à página Integração Médica: https://www.hapvida.com.br/site/integracao-medicos/login")
+        elif escolha_prestador == "14":
+            print("\n---Intercâmbio---")
+            print("Link direcionado à página Intercâmbio: https://webhap.hapvida.com.br/pls/webhap/webnewcongenere.Login")
+        elif escolha_prestador == "15":
+            print("\n---Folha Médica - Diagnósticos---")
+            print("Link direcionado à página Folha Médica - Diagnósticos: http://fmvi.hapvida.com.br/folhamedvidaimagem/")
+        elif escolha_prestador == "16":
+            print("\n---Reset de Senha AD---")
+            print("Link direcionado à página Reset de Senha AD: https://hapvida.service-now.com/sd?id=sd_password_reset_ad")
+        else:
+            print("Opção inválida. Selecione uma opção válida")
+        self.mostrar_resumo_operacao("Prestador ")

@@ -323,3 +323,106 @@ class Sistema:
         else:
             print("Opção inválida. Selecione uma opção válida")
         self.mostrar_resumo_operacao("Prestador ")
+
+    def menu_corretor(self):
+        print("\n--- Corretor ---")
+        print("\n--- Menu Corretor---")
+        print("1. Ficha de Proposta Individual")
+        print("2. Sistema de Movimentação")
+        print("3. Movimentação Odontológica")
+        print("4. Troca de Arquivos")
+        print("5. Controle de Proposta por Senha")
+        print("6. Consulta CNPJ")
+        print("7. Proposta Vendedor")
+        print("8. Comisssão")
+        print("9. Contratos Administradora")
+        print("10. Controle de Relatórios")
+        print("11. Portal de Venda - Super Simples e PME")
+        print("12. Cadastro Empresa")
+        print("13. Cadastro Empresa Odontologia")
+        print("14. Cadastro Empresa Modelo")
+
+        print("---------------------------------------------------------------------")
+        escolha_corretor = input("Escolha o produto que deseja (1-14): ")
+        print("---------------------------------------------------------------------")
+
+        if escolha_corretor == "1":
+            print("\n---Ficha de Proposta Individual---")
+            print("Link direcionado à página Ficha de Proposta Individual: https://www.hapvida.com.br:7779/forms/frmservlet?form=t221d_i.fmx&usesdi=YES&config=jhapvida")
+        elif escolha_corretor == "2":
+            print("\n---Sistema de Movimentação---")
+            print("Link direcionado à página Sistema de Movimentação: https://webhap.hapvida.com.br/pls/webhap/webnewcadastrousuario.login")
+        elif escolha_corretor == "3":
+            print("\n---Movimentação Odontológica---")
+            print("Link direcionado à página Movimentação Odontológica: https://webhap.hapvida.com.br/pls/webhap/webNewDentalParceiroComercial.portal?pOpCorpo=LOGIN_PIM&pOrgAmb=1")
+        elif escolha_corretor == "4":
+            print("\n---Troca de Arquivos---")
+            print("Link direcionado à página Troca de Arquivos: https://webhap.hapvida.com.br/pls/webhap/webnewtrocaarquivo.login")
+        elif escolha_corretor == "5":
+            print("\n---Controle de Proposta por Senha---")
+            print("Link direcionado à página Controle de Proposta por Senha: https://webhap.hapvida.com.br/pls/webhap/pr_proposta")
+        elif escolha_corretor == "6":
+            print("\n---Consulta CNPJ---")
+            print("Link direcionado à página Consulta CNPJ: http://websrv.hapvida.com.br:8763/servicos/autenticacao.jsf")
+        elif escolha_corretor == "7":
+            print("\n---Proposta Vendedor---")
+            print("Link direcionado à página Proposta Vendedor: https://webhap.hapvida.com.br/pls/webhap/webNewCadastroEmpresa.Login")
+        elif escolha_corretor == "8":
+            print("\n---Comisssão---")
+            print("Link direcionado à página Comisssão: https://www.hapvida.com.br:7779/forms/frmservlet?form=t221dpv.fmx&usesdi=YES&config=jhapvida")
+        elif escolha_corretor == "9":
+            print("\n---Contratos Administradora---")
+            print("Link direcionado à página Contratos Administradora: https://webhap.hapvida.com.br/pls/webhap/webNewCadastroEmpresa.Login")
+        elif escolha_corretor == "10":
+            print("\n---Controle de Relatórios---")
+            print("Link direcionado à página Controle de Relatórios: https://www.hapvida.com.br:7779/forms/frmservlet?form=t221d_e.fmx&usesdi=YES&config=jhapvida")
+        elif escolha_corretor == "11":
+            print("\n---Portal de Venda - Super Simples e PME---")
+            print("Link direcionado à página Portal de Venda - Super Simples e PME: https://webhap.hapvida.com.br/pls/webhap/pk_controle_comissao.login")
+        elif escolha_corretor == "12":
+            print("\n---Cadastro Empresa---")
+            print("Link direcionado à página Cadastro Empresa: https://www.hapvida.com.br:7779/forms/frmservlet?form=taffix.fmx&usesdi=YES&config=jhapvida")
+        elif escolha_corretor == "13":
+            print("\n---Cadastro Empresa Odontologia---")
+            print("Link direcionado à página Cadastro Empresa Odontologia: https://webhap.hapvida.com.br/pls/webhap/webnewcontrolerelatorio.Login")
+        elif escolha_corretor == "14":
+            print("\n---Cadastro Empresa Modelo---")
+            print("Link direcionado à página Cadastro Empresa Modelo: https://hapvida.planium.io/web/login/entrar")
+        else:
+            print("Opção inválida. Selecione uma opção válida")
+        self.mostrar_resumo_operacao("Corretor")
+
+    def menu_suporte(self):
+        print("\n--- Central de Ajuda ---")
+        print("1. Guia Médico ")
+        print("2. Acesibilidade")
+        print("3. Perguntas Frequentes")
+
+        print("---------------------------------------------------------------------")
+        escolha_suporte = input("Escolha o produto que deseja (1-3): ")
+        print("---------------------------------------------------------------------")
+
+        if escolha_suporte == "1":
+            print("\n---Guia Médico---")
+            print("Link direcionado à página Guia Médico: https://www.hapvida.com.br/pls/webhap/webnewredecredenciada.selecionarede")
+        elif escolha_suporte == "2":
+            print("\n---Acessibilidade---")
+            print("Link direcionado à página Acessibilidade: https://www.hapvida.com.br/site/acessibilidade")
+        elif escolha_suporte == "3":
+            print("\n---Perguntas Frequentes---")
+            print("Link direcionado à página de Perguntas Frequentes: https://www.hapvida.com.br/site/central_de_ajuda")
+        else:
+            print("Opção inválida. Selecione uma opção válida")
+        self.mostrar_resumo_operacao("Suporte")
+
+    def mostrar_resumo_operacao(self, funcionalidade):
+        print(f"Operação na funcionalidade {funcionalidade} realizada.")
+        opcao = input("Deseja realizar outra operação? (S/N): ")
+        if opcao.lower() != "s":
+            print("Encerrando o programa.")
+            exit()
+
+
+if __name__ == "__main__":
+    sistema = Sistema()
+    sistema.executar()
